@@ -1,0 +1,26 @@
+
+public class Task2 {
+	public static void main(String[]args)
+	   {
+		   long input = 600851475143l; // set the number to the number from the spec ()
+		   long result;					// declare value to store result
+		   int  pos = 2;				// set position
+		   
+		   while (input != 1)
+		   {
+			   if (input % pos != 0)	// if it dosen't = 0 pos ++
+			   {
+				   pos ++;  
+			   }
+			   else 
+			   {
+				   result = input;				// the number is assigned to largest
+				   input = input / pos;		// divide the number by the position  
+				   if (input == 1)              //condition to break the loop becomes true 
+				   {
+					   System.out.println("The Largest Prime Factor is " + result); //print the result
+				   }
+			   }
+		   }
+	   }
+}

@@ -1,0 +1,58 @@
+/*
+ * Name : Rory Garner
+ * College : IT Carlow
+ * Year : 2016
+ * Description: Check long number to see if it is a palindrome. 
+ * 				
+ * */
+public class Task2 {
+	public static boolean isPal(String NumberToCheck)
+	{
+		boolean isPal = true ;
+		char leftC ;
+		char rightC ;
+		int pos = 0;
+		
+		while(isPal == true && pos < Math.floor(NumberToCheck.length() / 2)) 
+		   	{
+		   	    leftC = (NumberToCheck.charAt(pos)) ;
+		   	    rightC =(NumberToCheck.charAt(NumberToCheck.length() - (pos+1))) ;
+		   		if(leftC != rightC)
+			   		{
+			   			isPal = false ;
+			   		}
+		   		pos++ ;
+		   	}
+		return isPal ;
+		}    
+//*******************************************************************************************************   
+	public static void main(String[]args)	   
+	{
+	    int index1 = 0;
+	    int index2 = 0;
+	    int result = 0;
+	    int answer = 0;
+	    
+	    String string = Integer.toString(answer); //converting an Int value to a string 
+
+	    for (index1 =999 ;index1>=100 ;index1 -- ) //913
+	 	{
+	 		for (index2 = 999 ;index2>=100 ;index2 --) //993 
+	 		{
+	 			answer = index1*index2; // get the value for answer
+	 			string = Integer.toString(answer); //convert answer to a string  
+	 			if(isPal(string) == true && result == 0)
+	 			{
+	 				result = answer ;		 				
+					}
+	 			else if(isPal(string) == true && answer > result){ //if it is a palindrome & the answer is less than result
+		 			result = answer ;								// result gets the answer
+	 			}
+	 			index2 --;//decrement 2nd the loop
+	 		}
+	 			index2 = 999;//reset second loop to
+	 			index1--;//decrement 1stn loop
+	 }
+		System.out.println("The largest Palindrome of the product of two 3-digit numbers is " + result);
+	  } 
+	}
