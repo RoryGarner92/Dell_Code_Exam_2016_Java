@@ -14,7 +14,6 @@ public class Task1 {
 		   int  pos = 2;				// set position
 		   
 		   final long startTime = System.currentTimeMillis();		   
-		   
 		   while (input != 1)
 		   {
 			   if (input % pos != 0)	// if it dosen't = 0 position ++
@@ -29,8 +28,6 @@ public class Task1 {
 				   {
 					   System.out.println("The Largest Prime Factor is " + result); //print the result
 					   final long elapsedTimeMillis = System.currentTimeMillis() - startTime;
-					   System.out.println(elapsedTimeMillis); //print the result
-
 				   }
 			   }
 		   }

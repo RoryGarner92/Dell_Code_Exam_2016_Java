@@ -14,7 +14,6 @@ public class Task1 {
 		   int  pos = 2;				// set position
 		   
 		   final long startTime = System.currentTimeMillis();		   
-		   
 		   while (input != 1)
 		   {
 			   if (input % pos != 0)	// if it dosen't = 0 position ++

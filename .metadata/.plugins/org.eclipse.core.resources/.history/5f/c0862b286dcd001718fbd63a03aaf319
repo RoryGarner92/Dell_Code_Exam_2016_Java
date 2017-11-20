@@ -5,15 +5,12 @@
  * Description: Find the largest prime factor of a long number 
  * 				
  * */
-
 public class Task1 {
 	public static void main(String[]args)
 	   {
 		   long input = 600851475143l; // set the number to the number from the spec ()
 		   long result;					// declare value to store result
 		   int  pos = 2;				// set position
-		   
-		   final long startTime = System.currentTimeMillis();		   
 		   
 		   while (input != 1)
 		   {
@@ -28,12 +25,8 @@ public class Task1 {
 				   if (input == 1)              //condition to break the loop becomes true 
 				   {
 					   System.out.println("The Largest Prime Factor is " + result); //print the result
-					   final long elapsedTimeMillis = System.currentTimeMillis() - startTime;
-					   System.out.println(elapsedTimeMillis); //print the result
-
 				   }
 			   }
 		   }
-		   
 	   }
 }

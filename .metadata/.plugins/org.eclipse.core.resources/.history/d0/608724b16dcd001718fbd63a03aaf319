@@ -33,10 +33,7 @@ public class Task2 {
 	    int result = 0;
 	    int answer = 0;
 	    
-
 	    String string = Integer.toString(answer); //converting an Int value to a string 
-	    
-		final long startTime = System.currentTimeMillis();		   
 
 	    for (index1 =999 ;index1>=100 ;index1 -- ) //913
 	 	{
@@ -57,7 +54,5 @@ public class Task2 {
 	 			index1--;//decrement 1stn loop
 	 }
 		System.out.println("The largest Palindrome of the product of two 3-digit numbers is " + result);
-		final long elapsedTimeMillis = System.currentTimeMillis() - startTime;
-		System.out.println(elapsedTimeMillis); //print the result
-	} 
+	  } 
 	}

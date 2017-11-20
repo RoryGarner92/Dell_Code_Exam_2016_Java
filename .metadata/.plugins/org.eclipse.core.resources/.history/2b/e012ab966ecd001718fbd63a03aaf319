@@ -38,6 +38,7 @@ public class Task2 {
 	    
 		final long startTime = System.currentTimeMillis();		   
 
+	    
 	    for (index1 =999 ;index1>=100 ;index1 -- ) //913
 	 	{
 	 		for (index2 = 999 ;index2>=100 ;index2 --) //993 

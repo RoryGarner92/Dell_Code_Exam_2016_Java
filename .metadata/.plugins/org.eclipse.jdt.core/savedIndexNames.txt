@@ -9,9 +9,9 @@ INDEX VERSION 1.130+C:\Users\Rory\Documents\GitHub\Dell_Code_Exam_2016_Java\.met
 3065053440.index
 3677362244.index
 664140773.index
-3894941320.index
-1101913381.index
 767842954.index
+1101913381.index
+3894941320.index
 2509800163.index
 289811613.index
 2310838576.index

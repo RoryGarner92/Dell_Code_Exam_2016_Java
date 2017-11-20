@@ -13,8 +13,7 @@ public class Task1 {
 		   long result;					// declare value to store result
 		   int  pos = 2;				// set position
 		   
-		   final long startTime = System.currentTimeMillis();		   
-		   
+		   double startTime = System.currentTimeMillis();
 		   while (input != 1)
 		   {
 			   if (input % pos != 0)	// if it dosen't = 0 position ++
@@ -28,10 +27,8 @@ public class Task1 {
 				   if (input == 1)              //condition to break the loop becomes true 
 				   {
 					   System.out.println("The Largest Prime Factor is " + result); //print the result
-					   final long elapsedTimeMillis = System.currentTimeMillis() - startTime;
-					   System.out.println(elapsedTimeMillis); //print the result
-
-				   }
+				   }double endTime = System.currentTimeMillis();
+		   System.out.println("Total execution time: " + (endTime - startTime) );
 			   }
 		   }
 		   
